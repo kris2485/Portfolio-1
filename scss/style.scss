@@ -22,6 +22,7 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
+/* header */
 header {
     background-image: url('https://i.postimg.cc/HxBZzDhq/Photo.jpg');
     background-size: cover;
@@ -172,4 +173,69 @@ header::after {
     bottom: 0;
     background: linear-gradient(to bottom, transparent 0%, black 100%);
     z-index: -1;
+}
+/* About us */
+.about-us {
+    padding-bottom: 100px;
+}
+.title {
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    color: #576671;
+}
+.title::after {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 50%;
+    width: 50px;
+    height: 1px;
+    transform: translateX(-50%);
+    background: $color-green;
+}
+.title-p {
+    text-align: center;
+    color: #576671;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+        .wrap-about {
+        flex: 1 0 21%;
+        position: relative;
+        text-align: center;
+        margin-right: 40px;
+            h1 {
+            color: #000;
+            font-family: 'Raleway', sans-serif;
+            padding-top: 35px;
+            }
+            p {
+            color: #98A3AB;
+            }
+                .font {
+                    font-size: 60px;
+                    background-color: #EDEFF1;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 200px;
+                    vertical-align: middle;
+                    margin: 0 auto;
+                    i {
+                    color: #87949F;
+                    }
+                }
+                
+        }
+}
+.wrap .wrap-about .font:hover {
+    background: #5ADBA3;
+}
+.wrap .wrap-about .font:hover i {
+    color:#fff;
 }
