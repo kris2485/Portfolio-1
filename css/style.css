@@ -23,4 +23,160 @@ body {
   margin: 0 auto;
 }
 
+header {
+  background-image: url("https://i.postimg.cc/HxBZzDhq/Photo.jpg");
+  background-size: cover;
+  height: 1053px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+header .logo {
+  float: left;
+  padding: 10px 0;
+  font-size: 32px;
+}
+header .logo .dot {
+  color: #5ADBA3;
+}
+header .navigation {
+  float: right;
+}
+header .navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header .navigation ul li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 50px;
+}
+header .navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header .navigation ul li a .search-box {
+  position: relative;
+}
+header .navigation ul li a .search-box input {
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  color: transparent;
+  font-size: 1em;
+  line-height: 25px;
+}
+header .navigation ul li a .search-box input:hover {
+  cursor: pointer;
+  color: #5ADBA3;
+}
+header .navigation ul li a .search-box input:hover:focus {
+  cursor: text;
+}
+header .navigation ul li a .search-box input:hover + span {
+  background: rgba(255, 255, 255, 0.2);
+}
+header .navigation ul li a .search-box input:focus {
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  color: black;
+  background: none;
+  color: #fff;
+}
+header .navigation ul li a .search-box input:focus + span {
+  width: 200px;
+}
+header .navigation ul li a .search-box input:focus + span::before {
+  width: 2px;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+header .navigation ul li a .search-box input + span {
+  z-index: -1;
+  position: absolute;
+  border: 2px solid #fff;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  transition: all 0.25s ease-in 0.25s;
+  border-radius: 25px;
+  left: 0;
+}
+header .navigation ul li a .search-box input + span::before {
+  transition: all 0.25s ease-in 0.25s;
+  transform-orgin: left top;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+  transform: rotate(45deg) translate(26px, -2px);
+}
+header .navigation ul li a:hover {
+  color: #5ADBA3;
+}
+header .splash {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .splash h1 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+}
+header .splash h1 .second-part {
+  font-weight: 100;
+}
+header .splash h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 5px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #5ADBA3;
+  cursor: pointer;
+}
+
+.btn-green {
+  background: #5ADBA3;
+  margin-top: 50px;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
