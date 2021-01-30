@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/kris2485/Portfolio-1/issues"
   },
-  "homepage": "https://github.com/kris2485/Portfolio-1#readme"
+  "homepage": "https://github.com/kris2485/Portfolio-1#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.26.14",
+    "html-validate": "^4.3.0"
+  }
 }
