@@ -1,2 +1,2 @@
 autoprefixer-cli -o css/style.prefixed.css css/style.css
-npm test html
+html-validate .html
