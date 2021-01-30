@@ -1,0 +1,20 @@
+{
+  "name": "Projekt-3.7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kris2485/Portfolio-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kris2485/Portfolio-1/issues"
+  },
+  "homepage": "https://github.com/kris2485/Portfolio-1#readme"
+}
